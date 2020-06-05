@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./button.css"
+</head>
+<body>
+    <div class="main-div">
+        <div class="display-button-div">
+            <button id="newButton">
+                Default Button
+            </button>
+        </div>
+        <div class="form-div">
+            <form id="form">
+                <label><p>Button Label:</p><input type="text" name="label" required/></label>
+                <label><p>Font Size</p><input type="number" name="fontsize" value=16 min=8 max=50 /></label>
+                <label><p>Font Color</p><input type="color" name="color" value="rgb(255,255,0)" /></label>
+                <label>
+                    <p>Padding Top-Right-bottom-left</p>: 
+                    <input class="padd" type="number" name="paddingtop" value="1" min=0 max=24 />-
+                    <input class="padd" type="number" name="paddingright" value="6" min=0 max=48 />-
+                    <input class="padd" type="number" name="paddingbottom" value="1" min=0 max=24 />-
+                    <input class="padd" type="number" name="paddingleft" value="6" min=0 max=48 />
+                </label>
+                <label><p>Background Color:</p><input type="color" name="bgcolor" value="#eeeeee" /></label><br>
+                <label><p>Border Color:</p><input type="color" name="bordercolor" value="#eeeeee"/></label>
+                <label><p>Border Width:</p><input type="number" name="borderwidth" value=0 min=0 max=50 /></label>
+                <label><p>Border Radius:</p><input type="number" name="borderradius" value=0 min=0 max=50 /></label>
+                <input id="generate-button" type="submit" value="Generate Button"/>
+            </form> 
+        </div>
+       
+    </div>
+
+    <script src="./button.js"></script>
+</body>
+</html>
